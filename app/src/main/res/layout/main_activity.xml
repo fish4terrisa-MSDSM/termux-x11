@@ -2,11 +2,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="320px"
+    android:layout_height="320px"
     android:background="@android:color/black"
-    android:scaleX="0.7"
-    android:scaleY="0.7">
+    android:translationX="60px"
+    android:translationY="73px">
 
     <FrameLayout
         android:id="@+id/frame"
@@ -18,17 +18,13 @@
         android:paddingLeft="0dp"
         android:paddingTop="0dp"
         android:paddingRight="0dp"
-        android:paddingBottom="0dp"
-        android:scaleX="0.7"
-        android:scaleY="0.7">
+        android:paddingBottom="0dp">
 
         <com.termux.x11.LorieView
             android:id="@+id/lorieView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
             android:visibility="visible" />
 
         <LinearLayout
@@ -38,8 +34,6 @@
             android:background="@android:color/black"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
             android:visibility="visible">
 
             <ImageView
@@ -48,25 +42,19 @@
                 android:layout_height="130dp"
                 android:contentDescription="X Logo"
                 android:scaleType="fitCenter"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 app:srcCompat="@drawable/ic_x11_icon"
                 tools:ignore="HardcodedText" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="20dp"
-                android:scaleX="0.7"
-                android:scaleY="0.7" />
+                android:minHeight="20dp" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="@string/not_connected"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
@@ -74,46 +62,34 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="40dp"
-                android:scaleX="0.7"
-                android:scaleY="0.7" />
+                android:minHeight="40dp" />
 
             <Button
                 android:id="@+id/preferences_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="@string/preferences_button_text" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="10dp"
-                android:scaleX="0.7"
-                android:scaleY="0.7" />
+                android:minHeight="10dp" />
 
             <Button
                 android:id="@+id/help_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="@string/help_button_text" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="10dp"
-                android:scaleX="0.7"
-                android:scaleY="0.7" />
+                android:minHeight="10dp" />
 
             <Button
                 android:id="@+id/exit_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="@string/exit_button_text" />
         </LinearLayout>
 
@@ -124,8 +100,6 @@
         android:id="@+id/mouse_helper_visibility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
         android:translationX="0px"
         android:translationY="0px">
 
@@ -142,8 +116,6 @@
             android:paddingEnd="0px"
             android:paddingRight="0px"
             android:paddingBottom="0px"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
             android:text="X"
             android:textSize="8sp"
             tools:ignore="HardcodedText,PxUsage,SmallSp" />
@@ -152,8 +124,6 @@
             android:id="@+id/mouse_helper_secondary_layer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
             tools:visibility="visible">
 
             <Button
@@ -169,8 +139,6 @@
                 android:paddingEnd="0px"
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="L"
                 android:textSize="8sp"
                 tools:ignore="HardcodedText,PxUsage,SmallSp" />
@@ -188,8 +156,6 @@
                 android:paddingEnd="0px"
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="M"
                 android:textSize="8sp"
                 tools:ignore="HardcodedText,PxUsage,SmallSp" />
@@ -207,8 +173,6 @@
                 android:paddingEnd="0px"
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="R"
                 android:textSize="8sp"
                 tools:ignore="HardcodedText,PxUsage,SmallSp" />
@@ -222,8 +186,6 @@
         android:layout_gravity="bottom|center"
         android:alpha="0.7"
         android:orientation="vertical"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
         android:translationX="0px"
         android:translationY="0px">
 
@@ -231,8 +193,6 @@
             android:id="@+id/mouse_buttons_secondary_layer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
             tools:visibility="visible">
 
             <Button
@@ -249,8 +209,6 @@
                 android:paddingEnd="0px"
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="L"
                 android:textColor="@android:color/black"
                 android:textSize="8sp"
@@ -270,8 +228,6 @@
                 android:paddingEnd="0px"
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="M"
                 android:textColor="@android:color/black"
                 android:textSize="8sp"
@@ -291,8 +247,6 @@
                 android:paddingEnd="0px"
                 android:paddingRight="0px"
                 android:paddingBottom="0px"
-                android:scaleX="0.7"
-                android:scaleY="0.7"
                 android:text="R"
                 android:textColor="@android:color/black"
                 android:textSize="8sp"
@@ -311,8 +265,6 @@
             android:minHeight="40dp"
             android:padding="2dp"
             android:scaleType="fitCenter"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
             android:src="@android:drawable/ic_menu_mylocation"
             tools:ignore="HardcodedText,PxUsage,SmallSp" />
     </LinearLayout>
@@ -323,8 +275,6 @@
         android:layout_height="37.5dp"
         android:layout_gravity="bottom|center"
         android:background="@android:color/black"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
         android:visibility="gone" />
 
     <View
@@ -332,7 +282,5 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="bottom|center"
-        android:background="@android:color/transparent"
-        android:scaleX="0.7"
-        android:scaleY="0.7" />
+        android:background="@android:color/transparent" />
 </FrameLayout>
